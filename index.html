@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="styleS.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Bongs</title>
+    <link rel="icon" href="images/iconsprofile4.png" type="image/png">
+    
+</head>
+<body>
+    <div class="Head">
+        <div class="navbar">
+            <img src="images/Logo-NWU.png" class="icon">
+            <ul>  
+                   <li><a href="./education">Education</a></li>
+                <li><a href="./index">My story</a></li>
+                  <li><a href="#" onclick="openContactModal()">Contact me</a></li>
+               
+            </ul>
+        </div>
+       
+        <div class="banner">
+            <div class="content">
+                <h1>BONGANI NJATHU</h1>
+                <p>Young ambitious graduand with diverse set of skills under software engeneering.<br>Resourceful, Dependable & Strong willingness to learn were I lack.</p>
+                <div>
+                    <button type="button" onclick="openLinkedInProfile()"><span></span>LinkedIn</button>
+                    <button type="button" onclick="openGithubProfile()"><span></span> GitHub</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span> 
+            <h2>Contact Information</h2>
+            <p>If you have any questions or need to reach me for any reason:</p>
+            <p>Email: njathubongani@gmail.com</p>
+            <p>Phone: 0713566254</p>
+        </div>
+    </div>
+
+    <!-- experience Section -->
+    <div class="portfolio">
+
+        <div class ="ExpHeading">
+            <h1 class="text-with-space">My Exposure</h1>
+            <p class="text-with-space">Here you'll find a showcase of my top 3 best projects and skills, Both work experience and start up projects.</p>
+
+        </div>
+       
+        <!-- Project 1: RPA Developer -->
+        <div class="projectRPA">
+            <h2 class="text-with-space">RPA Developer (Hackathon)</h2>
+            <p>This project showcases my skills in Automation development.</p>
+           
+           
+          <div class="backImage">
+            <div class="pdf-viewer" style="background-color: #012b2b"> 
+                <embed src="images/GeeXpo UiPath Hackathon Brief.pdf" type="application/pdf" width="70%" height="400">
+            </div>
+            
+
+          </div>
+            
+            <div class="backImage">
+                <video autoplay loop muted playsinline id="bg-video">
+                    <source src="images/Rpaved.mp4"  type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="images/image_20231018_2232355f780a99-f5f5-4d83-a6a9-20ed21a8e5ad-1.jpg" class="breathing-image" alt="RPA awards" width="180" height="375">
+
+                <h2 class="text-with-space" style="color: #0ceed0;">Tech stack highlighs</h2>
+               
+                <ul class="tech-stack">
+                    <li>Excel Data handling</li>
+                    <li>Web scraping</li>
+                    <li>UIpath Studio</li>
+                    <li>Visual Basic</li>
+                    <li>Azure Data Studio</li>
+                    <li>Documentation and Reporting</li>
+                    <li>UiPath Orchestrator</li>
+                </ul>
+                <h2 style="color: #0ceed0;">Challenges</h2>
+                <div class="MiddleList">
+                    <h4 style="margin-bottom: 10px;"  class="text-with-space">• Complexity</h4>
+                    <p>The processes got more complex as the project grew and interacting with webpages with unstructured data,</p>
+                    <p style="margin-bottom: 10px;">unstable website's elements,changes in page structures.</p>
+                
+                    <h4 style="margin-bottom: 10px;"  class="text-with-space">• Unforeseen Challenges</h4>
+                    <p>Dealing with unexpected challenges like frequent downtime of the efundi web pages as they were under maintenance in that period.</p>
+                    <p style="margin-bottom: 10px;">Session management. This web is highly secured, leading to session expiring and becoming invalid during the execution of automated tasks.</p>
+                </div>
+                
+                
+
+                <h2 class="text-with-space" style="color: #0ceed0;"> My Solution</h2>
+                <a href="https://github.com/Bongani-4/Testing_and_RPAs" style="color: #73e2fd;" style="margin-bottom: 2cm";> Link to solution </a>
+            </div>
+           
+                
+        </div>
+    
+
+     
+        <div class="projectmobile">
+            <h2>Mobile Developer</h2>
+            <p>This section showcases my skills  and professional exposure in Mobile development.</p>
+        
+            
+            <div class="backImage">
+
+                <div class="container">
+                    <h2 style="color: #0ceed0;">Work experience </h2>
+                    <div class="work-experience">
+                        <div class="job">
+                            <div class="job-title">Android developer</div>
+                            <div class="company-name">Oasis Infobyte</div>
+                            <div class="employment-period">Feb-Mar 2024</div>
+                            <ul class="responsibilities" >
+                                <li class="text-with-space">Integrated Firebase services such as Firestore and Authentication for real-time data synchronization and user authentication.</li>
+                                <li  class="text-with-space">Exposure with Firebase Expresso UI testing for ensuring the functionality and UI consistency of these Android apps.</li>
+                            <li  class="text-with-space">Implemented MVVM  design pattern architecture to make my applications scalable and maintainable.</li>
+                            <li  class="text-with-space"> Administering both cloud and local databases for efficient data storage and retrieval in these apps...</li>
+                               
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+           
+               
+                <h2 style="color: #0ceed0;">Tech stack highlighs</h2>
+               
+                <ul class="tech-stack">
+                    <li>MVVM design pattern</li>
+                    <li>Junit 4 & 5, Expresso & Mockito libraries</li>
+                    <li>Android studio</li>
+                    <li>Git</li>
+                    <li>Kotlin, gradle and Java </li>
+                    <li>Documentation</li>
+                    <li>Jetpack commpose</li>
+                    <li>TDD methodology</li>
+                    <li>SQLlite & mySql</li>
+                </ul>
+               
+                
+                
+
+                <h2 style="color: #0ceed0;"> Award</h2>
+                <div class="backImage">
+                    <img src="images/e5ec24f3_1.png" alt="Award Image" width="350" height="200">
+                </div>
+
+                  <h3 class="text-with-space"> More Android development</h3>
+                     <a href="https://github.com/Bongani-4" style="color: #00e4f5;" style="margin-bottom: 2cm";> Go to github repos </a>
+           
+                  </div>
+           
+                
+                
+
+      
+      </div>
+
+        <!-- Project 3: web -->
+        <div class="projectWeb">
+            <h3 class="text-with-space">  Web Developer</h3>
+            <p>This project demonstrates my skills in Web development .</p>
+             
+          <div class="backImage">
+            <div class="pdf-viewer" style="background-color: #012b2b"> 
+              <img src="images/Api.png"  alt="Project description" width="60%" height="300">       </div>
+            
+
+          </div>
+            
+            <div class="backImage">
+               
+                <h2 class="text-with-space" style="color: #0ceed0;">Tech stack highlighs</h2>
+               
+                <ul class="tech-stack">
+                    <li>Visual studio</li>
+                    <li>C#, HTML,CSS & JS</li>
+                    <li> RESTful APi</li>
+                    <li>SQL Server Management Studio 19</li>
+                    <li>Microsoft Azure</li>
+                   
+                </ul>
+                             
+                
+
+                <h2 class="text-with-space" style="color: #0ceed0;"> My Solution</h2>
+                <a href="https://github.com/Bongani-4/EcoPower_Logistics-MVC-Website" style="color: #73e2fd;" style="margin-bottom: 2cm";> Link to solution</a>
+            </div>
+           
+          
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>That's all. Have a nice day!</p>
+        </div>
+    </div>
+    
+</body>
+</html>
