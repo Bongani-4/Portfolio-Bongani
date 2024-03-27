@@ -26,43 +26,64 @@
 .portfolio {
     position: absolute;
     top: 110%;
-    left: 50%; 
-    transform: translateX(-50%);    width: 90%;    max-width: 600px; 
+    left: 55%; 
+    transform: translateX(-47%);    width: 30%;    max-width: 600px; 
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
     justify-content: space-between;
     gap: 0.5cm;
 } 
 
-.ExpHeading, .projectRPA, .projectmobile {
-    width: calc(100% - 20px);
-    margin: 10px;    
+.ExpHeading, .projectRPA, .projectmobile, .projectWeb{
+    width: 100%; 
+    margin: 10px auto; 
     background-color: #012b2b; 
     background-image: linear-gradient(45deg, rgba(5, 104, 104, 0.8) 50%, transparent 50%);
     background-size: 400% 400%;
-    animation: gradientAnimation 5s ease infinite;
+    border-radius: 25px;
+    background-position: center ;
+    max-width: 1200px;
+    animation: gradientAnimation 15s ease infinite;
     text-align: center;
     color: #fff;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 414px) {
     .portfolio {
         width: 100%; 
         max-width: none;
+        left: 52%; 
 
     }
+    .ExpHeading{
+    width: 90%;
+    margin: 10px;     
+    background-color: #012b2b; 
+    background-image: linear-gradient(45deg, rgba(5, 104, 104, 0.8) 50%, transparent 50%);
+    background-size: 400% 400%;
+    box-shadow: 0 4px 8px rgba(0, 0, 15, 5.5);
+   align-self: center;
+    animation: gradientAnimation 15s ease infinite;
+    text-align: center;
+    color: #fff;
+    }
 
-    .ExpHeading, .projectRPA, .projectmobile, .projectWeb{
-        width: 100%;
-    
+     .projectRPA, .projectmobile, .projectWeb{
+        width: 90%;
         margin: 10px;     
         background-color: #012b2b; 
         background-image: linear-gradient(45deg, rgba(5, 104, 104, 0.8) 50%, transparent 50%);
         background-size: 400% 400%;
+        box-shadow: 0 4px 8px rgba(0, 0, 15, 5.5);
         animation: gradientAnimation 15s ease infinite;
+       align-self: center;
         text-align: center;
         color: #fff;
         
     }
+   
+  
 }
 
 
@@ -72,7 +93,9 @@
 @media screen and (max-width: 768px) {
     .pdf-viewer {
         width: 100%; 
-        height: 8cm;
+        height: 5cm;
+        border-radius: 20px;
+       
     }
      .navbar {
         flex-direction: column;
@@ -87,7 +110,26 @@
     .navbar ul li {
         margin: 2px; 
     }
+    .breathing-image{
+        max-height: 3cm ;
+        max-width :2cm;
+    }
+    .portfolio{
+    position: absolute;
+    top: 110%;
+    left: 55%; 
+    transform: translateX(-50%);    width: 100%;    max-width: 600px; 
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5cm;
+    }
+    
 }
+
+
 
 
 .breathing-image:hover {
@@ -97,6 +139,8 @@
     transition: transform 0.3s ease-in-out; 
     box-shadow: 10 4px 32px rgba(0, 0, 0, 0.3); 
     top: auto;
+    height:8.9cm;
+    width: 5cm;
     border-radius: 10px 10px 10px 10px; 
    
 
@@ -146,7 +190,7 @@
 .Head{
 
     width: 100%;
-    height:1.5cm;
+    height:2cm;
     background-image: linear-gradient(rgba(9, 12, 12, 0.925),rgba(9, 153, 143, 0.925)),url();
     background-size:2cm;
     background-position: top ;
@@ -184,7 +228,7 @@ body {
     background-color: #00e4f5;
     background-image: linear-gradient(45deg, rgba(2, 80, 76, 0.8) 50%, transparent 50%); /* Background gradient for glassy shine effect */
     background-size: 400% 400%;
-        animation: gradientAnimation 15s ease infinite; }
+        animation: gradientAnimation 60s ease infinite; }
 
 
 
@@ -264,17 +308,16 @@ button:hover {
 }
 
 
-   .footer {
-    background-color:rgba(5, 83, 78, 0.925);
+.footer {
+    background-color: rgba(5, 83, 78, 0.925);
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
-    top: 100%;
-    bottom: 0;
-    height: 2cm;
+    margin-top: 20px; 
+    border-radius: 20px;
 }
+
 .pdf-viewer {
     border-radius: 10px, 10px, 10px, 10px; 
     overflow: hidden; 
