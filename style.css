@@ -26,67 +26,76 @@
 .portfolio {
     position: absolute;
     top: 110%;
-    left: 55%; 
-    transform: translateX(-47%);    width: 30%;    max-width: 600px; 
+    transform: translateX(-50.8%);
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
     justify-content: space-between;
     gap: 0.5cm;
-} 
+}
 
-.ExpHeading, .projectRPA, .projectmobile, .projectWeb{
-    width: 100%; 
-    margin: 10px auto; 
-    background-color: #012b2b; 
-    background-image: linear-gradient(45deg, rgba(5, 104, 104, 0.8) 50%, transparent 50%);
-    background-size: 400% 400%;
+.ExpHeading, .projectRPA, .projectmobile, .projectWeb {
+    width: 100%;
+    margin: 10px auto;
+    background-color: #012b2b;
     border-radius: 25px;
-    background-position: center ;
-    max-width: 1200px;
-    animation: gradientAnimation 15s ease infinite;
+    background-position: center;
     text-align: center;
     color: #fff;
 }
-@media screen and (min-width: 414px) {
+
+/* small screens  */
+@media screen and (max-width: 414px) {
+   
+    .navbar{
+
+        width:  85%;
+        margin: auto;
+        padding: 1px 0;
+        display: flex;
+        align-items:start;
+        justify-content: space-between;
+        padding-top: 0px;
+        white-space: nowrap;
+        overflow: hidden; 
+        text-overflow: ellipsis;    
+        }
     .portfolio {
-        width: 100%; 
-        max-width: none;
-        left: 52%; 
+        width: calc(100% - 0.5cm);  
+        max-width: fit-content;   
+
+        margin-left: -0.2cm;
 
     }
-    .ExpHeading{
-    width: 90%;
-    margin: 10px;     
-    background-color: #012b2b; 
-    background-image: linear-gradient(45deg, rgba(5, 104, 104, 0.8) 50%, transparent 50%);
-    background-size: 400% 400%;
-    box-shadow: 0 4px 8px rgba(0, 0, 15, 5.5);
-   align-self: center;
-    animation: gradientAnimation 15s ease infinite;
-    text-align: center;
-    color: #fff;
-    }
 
-     .projectRPA, .projectmobile, .projectWeb{
+    .ExpHeading {
         width: 90%;
-        margin: 10px;     
-        background-color: #012b2b; 
-        background-image: linear-gradient(45deg, rgba(5, 104, 104, 0.8) 50%, transparent 50%);
-        background-size: 400% 400%;
+        margin: 10px;
+        background-color: #012b2b;
         box-shadow: 0 4px 8px rgba(0, 0, 15, 5.5);
-        animation: gradientAnimation 15s ease infinite;
-       align-self: center;
         text-align: center;
         color: #fff;
-        
     }
-   
-  
+
+    .projectRPA, .projectmobile, .projectWeb {
+        width: 90%;
+        margin: 10px;
+        background-color: #012b2b;
+        box-shadow: 0 4px 8px rgba(0, 0, 15, 5.5);
+        text-align: center;
+        color: #fff;
+    }
 }
 
-
+/*  larger screens */
+@media screen and (min-width: 415px) {
+    .portfolio {
+        width: calc(100% - 5cm); 
+        max-width: none;
+        transform: translateX(2.5cm);
+    }
+}
 
 
 
@@ -118,7 +127,7 @@
     position: absolute;
     top: 110%;
     left: 55%; 
-    transform: translateX(-50%);    width: 100%;    max-width: 600px; 
+ 
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -225,10 +234,10 @@ padding-top: 0px;
     position: relative;
 }
 body {
-    background-color: #00e4f5;
-    background-image: linear-gradient(45deg, rgba(2, 80, 76, 0.8) 50%, transparent 50%); /* Background gradient for glassy shine effect */
+    background-color: #046b6b; 
+    background-image: linear-gradient(45deg, rgba(7, 161, 161, 0.8) 50%, transparent 50%);
     background-size: 400% 400%;
-        animation: gradientAnimation 60s ease infinite; }
+    animation: gradientAnimation 15s ease infinite;  }
 
 
 
@@ -465,6 +474,8 @@ button:hover {
         .back-to-main:hover {
             background-color: #013333;
         }
+
+        
 
 
 
