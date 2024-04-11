@@ -63,8 +63,10 @@
         text-overflow: ellipsis;    
         }
     .portfolio {
-        width: calc(100% - 0.02cm);  
-        max-width: fit-content;   
+        width: calc(100% - 1cm); 
+        max-width: none;
+        transform: translateX(0.5cm);
+    
 
         margin-left: -0.2cm;
 
@@ -92,15 +94,15 @@
 /*  larger screens */
 @media screen and (min-width: 415px) {
     .portfolio {
-        width: calc(100% - 5cm); 
+        width: calc(100% - 10%); 
         max-width: none;
-        transform: translateX(2.5cm);
+        transform: translateX(5%);
     }
 }
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) {
     .pdf-viewer {
         width: 100%; 
         height: 5cm;
@@ -124,17 +126,11 @@
         max-height: 3cm ;
         max-width :2cm;
     }
-    .portfolio{
-    position: absolute;
-    top: 110%;
-    left: 55%; 
- 
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5cm;
+    .portfolio {
+        width: calc(100% - 5%); 
+        max-width: none;
+        transform: translateX(2.5%);
+        left: 5%;
     }
     
 }
