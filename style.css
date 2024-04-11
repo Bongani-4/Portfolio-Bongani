@@ -46,12 +46,9 @@
 }
 
 /* small screens  */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 320px) {
    
-    .responsibilities{
-
-        
-    }
+   
     .navbar{
 
         width:  85%;
@@ -399,14 +396,21 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 60%;
     transition: transform 0.3s ease;
 }
 
 .education-item:hover {
     transform: translateY(-5px);
 }
-
+.logo-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+ 
+  
 .education-item h2 {
     font-size: 24px;
     color: #008080; /* Teal */
