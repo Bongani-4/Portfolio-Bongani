@@ -62,15 +62,16 @@
         overflow: hidden; 
         text-overflow: ellipsis;    
         }
+  
+        
     .portfolio {
-        width: calc(100% - 1cm); 
+        width: calc(100% - 5%); 
         max-width: none;
-        transform: translateX(0.5cm);
-    
-
-        margin-left: -0.2cm;
-
+        transform: translateX(2.5%);
+        left: 5%;
     }
+
+    
 
     .ExpHeading {
         width: 90%;
@@ -92,7 +93,7 @@
 }
 
 /*  larger screens */
-@media screen and (min-width: 415px) {
+@media screen and (min-width: 321px) {
     .portfolio {
         width: calc(100% - 10%); 
         max-width: none;
